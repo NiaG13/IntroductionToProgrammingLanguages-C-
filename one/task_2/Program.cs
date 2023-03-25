@@ -7,11 +7,8 @@ Console.WriteLine("Enter numbers 'a' & 'b': ");
 
 if (double.TryParse(Console.ReadLine(), out a) && double.TryParse(Console.ReadLine(), out b))
 {
-    if (a == b)
-    {
-    Console.WriteLine("These numbers are equal");
-    }
-    else if ( a < b )
+    
+    if ( a < b )
     {
     Console.WriteLine("Min = " + a);
     Console.WriteLine("Max = " + b);
@@ -20,6 +17,10 @@ if (double.TryParse(Console.ReadLine(), out a) && double.TryParse(Console.ReadLi
     {
     Console.WriteLine("Min = " + b);
     Console.WriteLine("Max = " + a);
+    }
+    if (a == b)
+    {
+    Console.WriteLine("These numbers are equal");
     }
 }
 else
