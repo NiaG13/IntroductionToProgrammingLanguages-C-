@@ -3,7 +3,7 @@
 double a = 0;
 double b = 0;
 
-Console.Write("Enter numbers 'a' & 'b': ");
+Console.WriteLine("Enter numbers 'a' & 'b': ");
 
 if (double.TryParse(Console.ReadLine(), out a) && double.TryParse(Console.ReadLine(), out b))
 {
