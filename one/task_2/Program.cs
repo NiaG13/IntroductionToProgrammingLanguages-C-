@@ -13,12 +13,12 @@ if (double.TryParse(Console.ReadLine(), out a) && double.TryParse(Console.ReadLi
     Console.WriteLine("Min = " + a);
     Console.WriteLine("Max = " + b);
     }
-    else
+    else if ( a > b )
     {
     Console.WriteLine("Min = " + b);
     Console.WriteLine("Max = " + a);
     }
-    if (a == b)
+    else if (a == b)
     {
     Console.WriteLine("These numbers are equal");
     }
