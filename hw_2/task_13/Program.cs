@@ -1,11 +1,11 @@
-﻿// Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
+﻿// Напишите программу, которая выводит ТРЕТЬЮ цифру заданного числа или сообщает, что третьей цифры нет.
 // 645 -> 5
 // 78 -> третьей цифры нет
 // 32679 -> 6
 
-Enter ();
+Main ();
 
-void Enter()
+void Main()
 {
     bool work = true;
     while(work)
@@ -25,15 +25,18 @@ void Enter()
 void task()
 {
     int num = ReadInt("num");
-    if(num < 99)
+    if(num < 100)
     {
-        System.Console.WriteLine("No third digit");
+        System.Console.WriteLine("No a third number");
     }
     else
     {
-        int minusTwoDigit = num / 100;
-        int thirdDigit = minusTwoDigit % 10;
-        System.Console.WriteLine($"Third digit: {thirdDigit}");
+        while(num > 1000)
+        {
+            num = num / 10;
+        }
+        int thirdNumber = num % 10;
+        System.Console.WriteLine($"The third number: {thirdNumber}");
     }
 }
 
